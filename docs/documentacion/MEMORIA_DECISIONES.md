@@ -15,4 +15,5 @@ Entrades més recents primer.
 - **Motiu:** que qualsevol persona de l'empresa ho pugui fer servir sense editar codi i sense risc de publicar secrets.
 - **Impacte:** `check-connection.ps1` canvia d'interfície (paràmetres obligatoris `-ClientId`, `-Tenant`, `-SiteUrl` i `-PfxPath` o `-Base64Path`). `base64_encoder.ps1` desa el resultat al costat del `.pfx` amb el nom `<nom>.base64.txt`, en lloc de `Certificat-Base64.txt` a la carpeta de l'script.
 - **Validació:** anàlisi sintàctica sense errors a PowerShell 7.5 i 5.1; `base64_encoder.ps1` provat amb una ruta entre cometes i amb espais (el Base64 i el porta-retalls coincideixen); `check-connection.ps1` provat en els casos sense certificat, amb un fitxer inexistent i amb PowerShell 5.1.
-- **Pendent:** provar com a administrador la generació del certificat i l'assistent; provar una connexió real a SharePoint. Revocar a Entra ID els certificats que estaven incrustats o capturats, perquè s'havien compartit fora del repositori.
+- **Validació de l'usuari (2026-10-20):** l'assistent i la connexió funcionen correctament.
+- **Pendent:** revocar a Entra ID els certificats que estaven incrustats o capturats, perquè s'havien compartit fora del repositori.
