@@ -1,0 +1,3 @@
+# Windows necessita CRLF als scripts i als .cmd
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
