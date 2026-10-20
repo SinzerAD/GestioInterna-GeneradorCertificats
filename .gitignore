@@ -1,0 +1,11 @@
+# Certificats i claus generats: no es poden versionar mai
+sortida/
+*.pfx
+*.cer
+*.p12
+*.key
+*.base64.txt
+Certificat-Base64.txt
+
+# Guia antiga: les captures contenen dades reals de client. Substituïda pel README.
+DocuGenerarCertificats.docx
